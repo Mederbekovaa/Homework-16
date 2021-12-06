@@ -24,4 +24,9 @@ public class HarDisk {
     public void setPartial(int partial) {
         this.partial = partial;
     }
+
+    @Override
+    public String toString(){
+        return size + " " + partial;
+    }
 }

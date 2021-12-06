@@ -24,5 +24,12 @@ public class UsbPort {
     public void setIdPort(String idPort) {
         this.idPort = idPort;
     }
+
+    @Override
+    public String toString (){
+        return typePort + " " + idPort;
+    }
+
 }
+
 

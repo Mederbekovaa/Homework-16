@@ -1,20 +1,21 @@
 package com.company;
 
 public class Computer {
+    private double ram;
+    private String user;
+
     public Computer(double ram) {
         this.ram = ram;
     }
 
-    public Computer(String color) {
-        this.color = color;
-    }
-    public Computer(char user) {
+
+    public Computer(String user) {
         this.user = user;
     }
 
-    public char getUser(){ return user; }
-    public void setUser(char user){ this.user = user;}
-    private char user;
+    public String getUser(){ return user; }
+    public void setUser(String user){ this.user = user;}
+
 
     public double getRam() {
         return ram;
@@ -24,7 +25,6 @@ public class Computer {
         this.ram = ram;
     }
 
-    private double ram;
 
     public String getColor() {
         return color;
@@ -36,8 +36,11 @@ public class Computer {
 
     private String color;
 
+    public Computer(double v, String abc){
+    }
 
-    public Computer(){
-
+    @Override
+    public String toString(){
+        return ram + " " + color + " " + user;
     }
 }

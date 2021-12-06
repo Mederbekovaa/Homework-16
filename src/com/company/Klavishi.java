@@ -5,7 +5,7 @@ public class Klavishi {
     private boolean hasPodsvetka;
     private boolean hisRightDigits;
 
-    public Klavishi(int[] arrayRaskladok, boolean hasPodsvetka, boolean hisRightDigits) {
+    public Klavishi(int arrayRaskladok, boolean hasPodsvetka, boolean hisRightDigits) {
         this.arrayRaskladok = arrayRaskladok;
         this.hasPodsvetka = hasPodsvetka;
         this.hisRightDigits = hisRightDigits;
@@ -33,6 +33,11 @@ public class Klavishi {
 
     public void setHisRightDigits(boolean hisRightDigits) {
         this.hisRightDigits = hisRightDigits;
+    }
+
+    @Override
+    public String toString(){
+        return arrayRaskladok + " " + hasPodsvetka + " " + hisRightDigits;
     }
 
 }

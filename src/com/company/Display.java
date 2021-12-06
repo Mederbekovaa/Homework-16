@@ -3,14 +3,17 @@ package com.company;
 public class Display {
     private int size;
     private String proizvoditel;
-
+    String typeMatrica;
     public Display(int size, String proizvoditel, String typeMatrica) {
         this.size = size;
         this.proizvoditel = proizvoditel;
         this.typeMatrica = typeMatrica;
     }
 
-    String typeMatrica;
+    public Display(int size, String proizvoditel) {
+
+    }
+
 
     public int getSize() {
         return size;
@@ -34,5 +37,10 @@ public class Display {
 
     public void setTypeMatrica(String typeMatrica) {
         this.typeMatrica = typeMatrica;
+    }
+
+    @Override
+    public String toString(){
+        return size + " " + proizvoditel + " " + typeMatrica ;
     }
 }

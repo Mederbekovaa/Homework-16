@@ -25,4 +25,8 @@ public class Ram {
         this.proizvoditel = proizvoditel;
     }
 
+    @Override
+    public String toString (){
+        return size + " " + proizvoditel;
+    }
 }
